@@ -99,5 +99,10 @@ namespace RECIPESYSTEM
                 MessageBox.Show("ERROR" + X);
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = !checkBox1.Checked;
+        }
     }
 }
